@@ -210,3 +210,61 @@ nav a:hover {
         padding-right: 0.5rem;
     }
 }
+
+/* --- Popup Modal Pink Theme (sesuai tema utama) --- */
+.modal-content.popup-custom {
+    background-color: var(--mc-bg-primary);
+    color: #4b5563;
+    border-radius: 1rem;
+    border: 1px solid var(--mc-pink-main);
+    box-shadow: 0 8px 20px rgba(216, 69, 119, 0.25);
+}
+
+.popup-custom .modal-header {
+    border-bottom: 1px solid var(--mc-pink-main) !important;
+}
+
+.popup-custom .modal-footer {
+    border-top: 1px solid var(--mc-light-pink) !important;
+}
+
+/* Judul berwarna pink utama */
+.popup-custom .modal-title {
+    color: var(--mc-pink-main) !important;
+    font-weight: 700;
+}
+
+/* Tombol Setuju (Primary, tema pink) */
+.popup-custom .btn-primary {
+    background-color: var(--mc-pink-main);
+    border-color: var(--mc-pink-main);
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(216, 69, 119, 0.4);
+}
+
+.popup-custom .btn-primary:hover {
+    background-color: var(--mc-pink-hover);
+    border-color: var(--mc-pink-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(216, 69, 119, 0.6);
+}
+
+/* Tombol Batal (abu gelap elegan) */
+.popup-custom .btn-secondary {
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+    color: var(--mc-bg-primary);
+    transition: background-color 0.3s;
+}
+
+.popup-custom .btn-secondary:hover {
+    background-color: #5c5c5c;
+}
+
+/* Ikon besar berwarna pink */
+.popup-custom .icon-pink {
+    color: var(--mc-pink-main) !important;
+    font-size: 3rem;
+}
