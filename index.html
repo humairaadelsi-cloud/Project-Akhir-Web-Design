@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maira Collection - Busana Adat Tradisional dan Modern</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen">
+
+    <div id="successAlert" class="alert alert-success mobile-menu-hidden fixed-top" role="alert">
+        <div class="container text-center shadow-sm">
+            Successfully! Pesan Anda telah terkirim.
+        </div>
+    </div>
+
+    <header class="bg-white shadow-lg rounded-bottom-4 fixed-top">
+        <div class="container py-3 d-flex justify-content-between align-items-center">
+
+            <div class="d-flex align-items-center">
+                <img src="/mairaaaaaaaaaa.jpeg" alt="Logo Maira Collection" class="logo-image rounded theme-main me-2">
+                <span class="fs-5 fw-bold text-theme-pink">Maira Collection</span>
+            </div>
+
+            <nav class="d-none d-md-flex gap-4">
+                <a href="#"
+                    class="text-decoration-none text-secondary fw-semibold transition duration-150 custom-hover-pink">Beranda</a>
+                <a href="#fitur"
+                    class="text-decoration-none text-secondary fw-semibold transition duration-150 custom-hover-pink">Keunggulan</a>
+                <a href="#koleksi"
+                    class="text-decoration-none text-secondary fw-semibold transition duration-150 custom-hover-pink">Koleksi</a>
+                <a href="#faq"
+                    class="text-decoration-none text-secondary fw-semibold transition duration-150 custom-hover-pink">FAQ</a>
+                <a href="#contact"
+                    class="text-decoration-none text-secondary fw-semibold transition duration-150 custom-hover-pink">Kontak</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="d-md-none btn p-2 text-secondary rounded-3 hover-bg-light">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="container mobile-menu-hidden d-md-none pb-2">
+            <a href="#"
+                class="d-block py-2 px-3 text-secondary rounded-3 fw-medium text-decoration-none mobile-nav-item">Beranda</a>
+            <a href="#fitur"
+                class="d-block py-2 px-3 text-secondary rounded-3 fw-medium text-decoration-none mobile-nav-item">Keunggulan</a>
+            <a href="#koleksi"
+                class="d-block py-2 px-3 text-secondary rounded-3 fw-medium text-decoration-none mobile-nav-item">Koleksi</a>
+            <a href="#faq"
+                class="d-block py-2 px-3 text-secondary rounded-3 fw-medium text-decoration-none mobile-nav-item">FAQ</a>
+            <a href="#contact"
+                class="d-block py-2 px-3 text-secondary rounded-3 fw-medium text-decoration-none mobile-nav-item">Kontak</a>
+        </div>
+    </header>
+
+    <main class="main-utama container my-16">
+        <div class="row g-5 align-items-center">
+
+            <div class="col-md-12 col-lg-6">
+                <div class="p-4 p-md-5 bg-white rounded-5 shadow-lg">
+                    <span class="small fw-semibold text-theme-pink text-uppercase d-block mb-2"
+                        style="letter-spacing: 0.1em;">Pusat Busana Adat dan Modern Indonesia</span>
+                    <h1 class="display-6 fw-bold mb-3 text-dark">
+                        Pesona Busana Tradisional dan Modern
+                    </h1>
+                    <p class="text-secondary mb-4">
+                        Temukan keindahan tak lekang waktu dari warisan busana adat Indonesia dan juga modern.
+                        Setiap
+                        helai pakaian kami diciptakan dengan dedikasi tinggi, menggabungkan tradisi leluhur dengan
+                        sentuhan modern yang elegan.
+                    </p>
+                    <a href="#koleksi" class="btn btn-pink rounded-pill px-4 py-2 fw-bold">
+                        Lihat Koleksi
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+
+                    <div class="carousel-inner rounded-4 shadow-sm" style="height: 400px;">
+                        <div class="carousel-item active">
+                            <img src="https://image.idn.media/post/20211122/page-bb33cceada3ac9ce8883ace632607da8.jpg"
+                                class="d-block w-100 object-fit-cover h-100"
+                                alt="Pakaian Adat Minang Modern dan Tradisional"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/d84577/ffffff?text=Minang+Modern';">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://i0.wp.com/zaloraadmin.wpcomstaging.com/wp-content/uploads/2025/09/image-179.png?fit=1200%2C620&ssl=1"
+                                class="d-block w-100 object-fit-cover h-100" alt="Pakaian Adat Batak"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/b83a62/ffffff?text=Pakaian+Batak';">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://image.idntimes.com/post/20190806/sunda-861440e4a3152c6b66533bcdfd7b77fb.jpg"
+                                class="d-block w-100 object-fit-cover h-100" alt="Pakaian Adat Sunda"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/e8c2d1/505050?text=Pakaian+Sunda';">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://awsimages.detik.net.id/community/media/visual/2021/11/25/pernikahan-adat-palembang-7_43.png?w=600&q=90"
+                                class="d-block w-100 object-fit-cover h-100" alt="Pakian Adat Palembang"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/f87e9e/505050?text=Gaun+Pengantin';">
+                        </div>
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                                aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="fitur" class="section-fitur bg-white">
+        <div class="container text-center">
+            <h2 class="small fw-semibold text-theme-pink text-uppercase mb-2" style="letter-spacing: 0.1em;">Mengapa
+                Memilih Kami</h2>
+            <h3 class="h3 fw-bold mb-5 text-dark">Kualitas dan Pelayanan Terbaik</h3>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-12 col-md-5 mx-3">
+                    <div class="feature-card p-4 rounded-4 shadow h-100 text-center">
+                        <div class="d-flex justify-content-center mb-4">
+                            <svg class="text-theme-pink" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v2" />
+                                <path d="M18 6l-1 1" />
+                                <path d="M22 12h-2" />
+                                <path d="M18 18l-1-1" />
+                                <path d="M12 22v-2" />
+                                <path d="M6 18l1-1" />
+                                <path d="M4 12H2" />
+                                <path d="M6 6l1 1" />
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3 text-dark">Proses Pengerjaan Cepat</h4>
+                        <p class="text-secondary mb-3">
+                            Kami memproses pesanan dengan efisien, memastikan busana Anda siap tepat waktu.
+                        </p>
+                        <ul class="text-start text-secondary list-unstyled">
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Jaminan Waktu Produksi
+                            </li>
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Pengiriman Ekspres
+                                Tersedia
+                            </li>
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Pelacakan Pesanan
+                                Real-Time</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 mx-3">
+                    <div class="feature-card p-4 rounded-4 shadow h-100 text-center">
+                        <div class="d-flex justify-content-center mb-4">
+                            <svg class="text-theme-pink" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22V8" />
+                                <path d="M5 12H2a10 10 0 0 1 20 0h-3" />
+                                <path d="M18.5 15.5L20 17" />
+                                <path d="M12 22C12 22 5 18 5 12 5 7 8 4 12 4s7 3 7 8c0 6-7 10-7 10z" />
+                            </svg>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3 text-dark">Desain Personal (Kustomisasi)</h4>
+                        <p class="text-secondary mb-3">
+                            Rancang busana impian Anda bersama desainer profesional kami.
+                        </p>
+                        <ul class="text-start text-secondary list-unstyled">
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Konsultasi Desain Gratis
+                            </li>
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Pilihan Material Premium
+                            </li>
+                            <li class mb-1 d-flex align-items-start"><i
+                                    class="fas fa-check-circle me-2 mt-1 text-theme-pink"></i> Pengukuran Tubuh Akurat
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="koleksi" class="section-koleksi  bg-light">
+        <div class="container text-center">
+            <h3 class="h3 fw-bold mb-5 text-theme-pink">Koleksi Pakaian Adat Populer</h3>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://weddingmarket.com/storage/images/artikelidea/0ae2614499a27e7f8834eca06373bc75fafcc71e.webp"
+                                class="w-100 h-100 object-fit-cover" alt="Pakaian Adat MinangKabau">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Baju Adat Marapulai Minang Kabau</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Sumatera Barat</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 999
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 999
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu9zVxZdUZeZwoQhBZYCwZKhFDfbnbfiVB3yu_YUBK6iJ0x73KH9cLLtn8jSgGnl0hgzc&usqp=CAU"
+                                class="w-100 h-100 object-fit-cover" alt="Pkaian Adat Medan">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Baju Adat Ulos Batak Toba</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Medan</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 1067
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 1011
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://weddingmarket.com/storage/images/artikelideacontent/new/dbf858600c210e0e0d7ef24de4beec4ca0f3e130.webp"
+                                class="w-100 h-100 object-fit-cover" alt="Busana pengantin Betawi">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Busana pengantin Betawi</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Jakarta</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 990
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 890
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://seringjalan.com/wp-content/uploads/2020/05/Baju-Bedahan-Baju-Adat-pengantin-Jawa-Barat-816x1020.jpg"
+                                class="w-100 h-100 object-fit-cover" alt="Pakian Adat Jawa Barat">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Baju Adat Bedahan Sunda</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Jawa Barat</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 1120
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 1010
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://statics.indozone.news/local/63199fd450330.jpg"
+                                class="w-100 h-100 object-fit-cover" alt="Pakaian adat Bali Payas Agung">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Pakaian adat Bali Payas Agung</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Bali</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 1670
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 1567
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                    <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                        <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                            <img src="https://www.kabarkalimantan.id/wp-content/uploads/2024/06/Sapei-e1718087894749.jpeg"
+                                class="w-100 h-100 object-fit-cover" alt="Baju Adat Sapei Sapaq dan Ta’a">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="fw-bold text-dark small mb-1">Baju Adat Sapei Sapaq dan Ta’a</h5>
+                            <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Kalimantan Timur</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                    <i class="fas fa-eye me-1"></i> 789
+                                </span>
+                                <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                    <i class="fas fa-heart me-1"></i> 754
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="gaun" class="pt-5 mt-5 container text-center">
+                <h3 class="h3 fw-bold mb-5 text-theme-pink">Koleksi Pakaian Gaun Populer</h3>
+
+                <div class="row justify-content-center g-4">
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                        <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                            <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                                <img src="https://cdn0-production-images-kly.akamaized.net/J80Y8BSBbAMoDKwcav6-UyyzNNI=/1x345:1080x953/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3632742/original/008918100_1636946620-257459816_252348480258866_8045811517948615485_n.jpg"
+                                    class="w-100 h-100 object-fit-cover" alt="akaian Aball gown Baju tuan putri">
+                            </div>
+                            <div class="p-3">
+                                <h5 class="fw-bold text-dark small mb-1">Pakaian Aball gown Baju tuan putri</h5>
+                                <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Gaun Pengantin</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                        <i class="fas fa-eye me-1"></i> 1543
+                                    </span>
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                        <i class="fas fa-heart me-1"></i> 1456
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                        <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                            <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                                <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,f_auto,q_auto:best,w_640/v1580035314/fqgtxvheqfys0vmvunc9.png"
+                                    class="w-100 h-100 object-fit-cover" alt="Gaun Ruffle">
+                            </div>
+                            <div class="p-3">
+                                <h5 class="fw-bold text-dark small mb-1">Gaun Ruffle Baju Mewah dan Elegen</h5>
+                                <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Pakistan</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                        <i class="fas fa-eye me-1"></i> 1579
+                                    </span>
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                        <i class="fas fa-heart me-1"></i> 1376
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                        <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                            <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                                <img src="https://www.lunss.com/uploads/article/2024/07/luxury-beaded-floral-lace-dubai-princess-wedding-dress.webp"
+                                    class="w-100 h-100 object-fit-cover" alt="Pkaian Adat Medan">
+                            </div>
+                            <div class="p-3">
+                                <h5 class="fw-bold text-dark small mb-1">Gaun Pengantin Dubai Renda Bunga</h5>
+                                <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Gaun Dubai</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                        <i class="fas fa-eye me-1"></i> 1658
+                                    </span>
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                        <i class="fas fa-heart me-1"></i> 1612
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 px-2">
+                        <div class="rounded-4 shadow-sm product-card-body overflow-hidden h-100">
+                            <div class="bg-secondary bg-opacity-25" style="height: 128px;">
+                                <img src="https://akcdn.detik.net.id/community/media/visual/2025/05/21/baju-pengantin-luna-maya-1747829514265.jpeg?w=650&q=90"
+                                    class="w-100 h-100 object-fit-cover" alt="akaian Aball gown Baju tuan putri">
+                            </div>
+                            <div class="p-3">
+                                <h5 class="fw-bold text-dark small mb-1">Gaun Sleeveles bernuansa Ethereal</h5>
+                                <p class="small text-secondary mb-3" style="font-size: 0.75rem;">Gaun Pengantin</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 me-1">
+                                        <i class="fas fa-eye me-1"></i> 1776
+                                    </span>
+                                    <span class="icon-stat p-2 small fw-semibold flex-grow-1 ms-1">
+                                        <i class="fas fa-heart me-1"></i> 1734
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" mt-4">
+                    <a href="#"
+                        class="btn btn-pink btn-outline-secondary rounded-3 px-4 py-2 fw-semibold bg-white text-theme-pink border border-secondary border-opacity-25 transition duration-300">
+                        Show more
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="testimoni" class="section-testimoni  bg-white">
+        <div class="container text-center">
+            <h3 class="h3 fw-bold mb-4 text-theme-pink">Kisah Pelanggan Kami</h3>
+
+            <div id="reviewCarousel" class="carousel slide bg-light p-4 rounded-5 shadow-lg" data-bs-ride="carousel"
+                data-bs-touch="true">
+                <div class="carousel-indicators mb-2">
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"
+                        aria-label="Review 1"></button>
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"
+                        aria-label="Review 2"></button>
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"
+                        aria-label="Review 3"></button>
+                </div>
+                <div class="carousel-inner pt-3 pb-5" style="min-height: 200px;">
+                    <div class="carousel-item active">
+                        <p class="lead fst-italic text-secondary mx-auto mb-4" style="max-width: 600px;">
+                            "Kualitas Songket Palembang ini luar biasa otentik dan elegan. Pelayanannya sangat ramah dan
+                            proses kustomisasinya mudah. Sangat merekomendasikan butik ini!"
+                        </p>
+                        <p class="fw-bold fs-6 text-theme-pink">- Risa Amalia, Jakarta</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead fst-italic text-secondary mx-auto mb-4" style="max-width: 600px;">
+                            "Desain Baju Adat Bali untuk pernikahan saya sungguh sempurna. Tim Nusantara Elok sangat
+                            profesional. Hasilnya melebihi ekspektasi!"
+                        </p>
+                        <p class="fw-bold fs-6 text-theme-pink">- Bima Sakti, Denpasar</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead fst-italic text-secondary mx-auto mb-4" style="max-width: 600px;">
+                            "Pengiriman cepat dan produknya luar biasa. Gaun Aball Gown yang terkesan sangat mewah
+                            membuat saya sangat senang dengan koleksi dari Maira Collection"
+                        </p>
+                        <p class="fw-bold fs-6 text-theme-pink">- Siti Khadijah, Medan</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-faq bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h3 class="fs-4 fw-bold text-theme-pink text-uppercase"
+                        style="letter-spacing: 0.1em; line-height: 1.2;">
+                        <span class="text-secondary small d-block mb-1">Punya Pertanyaan?</span>
+                        FREQUENTLY ASKED QUESTIONS
+                    </h3>
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item rounded-4 shadow-sm border-0 mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-4 text-dark fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    01 | Apakah semua produk menggunakan kain tradisional asli?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary accordion-body-bg">
+                                    Ya, kami menjamin bahwa mayoritas produk kami menggunakan kain tradisional asli,
+                                    seperti
+                                    Tenun Ikat, Songket, dan Batik Tulis dari pengrajin lokal. Kami berkomitmen pada
+                                    keaslian budaya dan kualitas bahan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item rounded-4 shadow-sm border-0 mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed rounded-4 text-dark fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    02 | Berapa lama proses kustomisasi pakaian adat?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary accordion-body-bg">
+                                    Proses kustomisasi bervariasi tergantung kerumitan desain dan jenis kain yang
+                                    digunakan. Umumnya, memakan waktu antara 4 hingga 8 minggu. Kami akan memberikan
+                                    estimasi waktu yang lebih akurat setelah konsultasi desain.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item rounded-4 shadow-sm border-0 mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed rounded-4 text-dark fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    03 | Apakah Maira Collection melayani pengiriman ke luar negeri?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary accordion-body-bg">
+                                    Saat ini, kami memprioritaskan pengiriman di seluruh wilayah Indonesia. Untuk
+                                    pengiriman internasional, silakan hubungi tim layanan pelanggan kami untuk
+                                    pengecekan
+                                    biaya dan prosedur khusus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item rounded-4 shadow-sm border-0 mb-3">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed rounded-4 text-dark fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    04 | Bagaimana cara mengajukan proposal kemitraan?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary accordion-body-bg">
+                                    Anda dapat mengisi formulir kontak di bawah ini dan memilih opsi "Kemitraan". Tim
+                                    kami
+                                    akan memproses data Anda dan menghubungi Anda kembali dalam 3-5 hari kerja untuk
+                                    diskusi lebih lanjut.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact bg-white">
+        <div class="container">
+            <div class="bg-light p-4 p-md-5 rounded-5 shadow-lg">
+                <div class="row g-4 align-items-start">
+
+                    <div class="col-12 col-md-6 p-3">
+                        <h3 class="display-6 fw-bold text-theme-pink mb-4">
+                            Hubungi Kami
+                        </h3>
+                        <p class="text-secondary mb-4">
+                            Tertarik untuk berdiskusi tentang pesanan kustom atau kemitraan? Silakan isi formulir di
+                            samping, dan tim kami akan segera menghubungi Anda.
+                        </p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope text-theme-pink me-3"></i>
+                            <span class="text-secondary">info@Maira Collection.com</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone-alt text-theme-pink me-3"></i>
+                            <span class="text-secondary">+62 85364642965</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <form id="contactForm" class="p-3" onsubmit="event.preventDefault(); sendFormAlert();"
+                            novalidate>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <input type="text" class="form-control rounded-3" placeholder="Nama" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control rounded-3" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <input type="tel" class="form-control rounded-3" placeholder="Nomor Telepon"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select rounded-3" required>
+                                        <option value="" disabled selected hidden>Pilih Topik</option>
+                                        <option value="pesanan">Pesanan Kustom</option>
+                                        <option value="kemitraan">Kemitraan/Kerja Sama</option>
+                                        <option value="lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control rounded-3" rows="4" placeholder="Pesan Anda"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="agreementCheck" required>
+                                <label class="form-check-label text-secondary small" for="agreementCheck">
+                                    Saya setuju untuk dihubungi oleh tim Maira Collection.
+                                </label>
+                            </div>
+                            <button type="submit" class="w-100 btn btn-pink rounded-pill px-4 py-2 fw-bold">
+                                Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="theme-pink-main text-white py-5 mt-5 mt-md-5">
+        <div class="container text-center d-flex flex-column align-items-center">
+
+            <p class="fs-5 fw-bold text-white mb-3">Maira Collection</p>
+
+            <div class="d-flex align-items-center mb-4">
+                <img src="/mairaaaaaaaaaa.jpeg" alt="Logo Maira Collection" class="logo-image rounded theme-main me-2"
+                    style="width: 32px; height: 32px;">
+                <p class="small mb-0 text-white opacity-75">Busana Tradisional dan Modern</p>
+            </div>
+
+            <div class="d-flex gap-4 fs-4 mb-4">
+                <a href="https://www.tiktok.com/@ranasywah" target="_blank"
+                    class="text-white opacity-75 text-decoration-none hover-white">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/tinmaiira/" target="_blank"
+                    class="text-white opacity-75 text-decoration-none hover-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="pt-3 border-top border-light border-opacity-25 w-100">
+                <p class="small mb-0 text-white opacity-75">©️ 2025 Maira Collection. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/script.js"></script>
+
+</body>
+
+</html>

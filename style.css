@@ -1,0 +1,212 @@
+/* --- Definisi Tema Warna Dasar --- */
+:root {
+    --mc-pink-main: #d84577;
+    --mc-pink-hover: #c03d68;
+    --mc-light-pink: #f9d8e3;
+    --mc-bg-primary: #fef8f9;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--mc-bg-primary);
+    min-height: 100vh;
+    width: 100%;
+    color: #4b5563;
+    /* Default text color (gray-600 equivalent) */
+}
+
+.main-utama,
+.section-fitur,
+.section-koleksi,
+.section-testimoni,
+.section-faq,
+.section-contact {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+#successAlert {
+    margin-top: 70px;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 1050;
+    background-color: var(--mc-pink-main);
+}
+
+.theme-pink-main {
+    background-color: var(--mc-pink-main) !important;
+}
+
+.text-theme-pink {
+    color: var(--mc-pink-main) !important;
+}
+
+/* --- Tombol Kustom --- */
+.btn-pink {
+    background-color: var(--mc-pink-main);
+    color: var(--mc-bg-primary);
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(216, 69, 119, 0.4);
+}
+
+.btn-pink:hover {
+    background-color: var(--mc-pink-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(216, 69, 119, 0.6);
+    color: var(--mc-bg-primary);
+}
+
+nav a:hover {
+    color: var(--mc-pink-hover) !important;
+}
+
+/* --- Card Kustom --- */
+.feature-card {
+    border: 1px solid var(--mc-light-pink);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--mc-bg-primary);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(216, 69, 119, 0.15);
+}
+
+.product-card-body {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--mc-bg-primary);
+}
+
+.product-card-body:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-stat {
+    background-color: var(--mc-light-pink);
+    color: var(--mc-pink-main);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Accordion FIX (Penting agar teks tidak hilang) --- */
+.accordion-button:not(.collapsed) {
+    color: var(--mc-bg-primary) !important;
+    background-color: var(--mc-pink-main);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    border-radius: 0.75rem 0.75rem 0 0 !important;
+}
+
+.accordion-button {
+    border-radius: 0.75rem !important;
+    /* rounded-xl */
+    padding: 1rem 1.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(216, 69, 119, 0.25);
+    border-color: var(--mc-pink-main);
+}
+
+.accordion-body {
+    border-radius: 0 0 0.75rem 0.75rem !important;
+}
+
+.accordion-body-bg {
+    background-color: var(--mc-light-pink) !important;
+}
+
+/* --- Utilitas Lain --- */
+.logo-image {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+/* Mengatur agar menu mobile tersembunyi secara default */
+.mobile-menu-hidden {
+    display: none;
+}
+
+/* Mengatur padding vertikal (py-16) */
+.py-16 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Mengatur margin vertikal (my-16) */
+.my-16 {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+.hover-white:hover {
+    color: var(--mc-pink-hover) !important;
+    opacity: 1 !important;
+    transform: scale(1.1);
+    /* Efek keren saat di-hover */
+    transition: all 0.3s ease;
+}
+
+
+.logo-image {
+    object-fit: contain;
+}
+
+/* --- PENYESUAIAN KHUSUS MOBILE (Max-width: 767px) --- */
+@media (max-width: 767.98px) {
+
+    /* Mengurangi padding di Hero dan Kontak */
+    .p-4 {
+        padding: 1rem !important;
+    }
+
+    /* Mengurangi margin vertikal utama */
+    .my-16 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Mengurangi ukuran font untuk Headline besar di mobile */
+    .display-6,
+    .fs-4 {
+        font-size: 1.75rem !important;
+    }
+
+    /* Ukuran font untuk header section (h3) */
+    .h3,
+    .fs-5 {
+        font-size: 1.25rem !important;
+    }
+
+    /* Mengurangi padding vertikal tombol accordion */
+    .accordion-button {
+        padding: 0.75rem 1rem !important;
+    }
+
+    /* Mengatur jarak di card list (icon-stat) */
+    .icon-stat {
+        padding: 0.5rem !important;
+        font-size: 0.75rem;
+    }
+
+    /* Navigasi Mobile: Memastikan item menutupi lebar penuh */
+    .mobile-menu-hidden~.d-md-none a {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
